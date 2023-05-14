@@ -4,7 +4,7 @@
 
 **Project description**
 
-The fitness center network, 'Bodybuilder-Data Scientist,' is working on a strategy to engage users based on analytical data. One of the most common problems facing fitness clubs and similar services is customer churn. It's not always clear when a user has stopped using the service, as they may not always leave in an obvious way.
+The fitness center network, 'Bodybuilder-Data Scientist,' is working on a strategy to engage users based on data. One of the most common problems facing fitness clubs and similar services is customer churn. It's not always clear when a user has stopped using the service, as they may not always leave in an obvious way.
 
 For a fitness center, a client is considered to have churned if they haven't visited the gym at least once in the last month. While it's possible that they went on vacation and will return to the gym upon their arrival, it's more likely that they won't. If a client starts going to the gym but then suddenly stops, they are unlikely to return.
 
@@ -45,28 +45,25 @@ The dataset also includes information based on the client's visit log, purchases
 13. `Avg_class_frequency_current_month` - the average frequency of visits per week for the previous month.
 14. `Avg_additional_charges_total` - the total revenue from other fitness center services, such as cafes, sports goods, beauty, and massage salon.
 
-**Project plan**
+## Project Plan
 
 1. Load the data.
 2. Conduct an exploratory data analysis (EDA):
-  a. Examine the dataset for missing features and study the mean values and standard deviations.
-  b. Analyze the mean values of features in two groups: those who churned and those who stayed.
-  c. Construct bar and feature distributions for those who churned and those who stayed.
-  d. Create a correlation matrix and display it.
-
+   1. Examine the dataset for missing features and study the mean values and standard deviations.
+   2. Analyze the mean values of features in two groups: those who churned and those who stayed.
+   3. Construct bar and feature distributions for those who churned and those who stayed.
+   4. Create a correlation matrix and display it.
 3. Build a binary classification model for customers, where the target feature is customer churn in the next month:
-  1. Split the data into training and validation sets.
-  2. Train the model in two ways:
-    1. Logistic regression.
-    2. Random forest.
-  3. Evaluate the accuracy, precision, and recall metrics for both models. Compare the models based on the metrics. Which model performed better based on the metrics?
-
+   1. Split the data into training and validation sets.
+   2. Train the model in two ways:
+      1. Logistic regression.
+      2. Random forest.
+   3. Evaluate the accuracy, precision, and recall metrics for both models. Compare the models based on the metrics. Which model performed better based on the metrics?
 4. Perform customer clustering:
-  1. Standardize the data.
-  2. Build a distance matrix on the standardized feature matrix and draw a dendrogram.
-  3. Train the clustering model based on the K-Means algorithm and predict customer clusters. Let's agree to use n = 5 as the number of clusters.
-  4. Examine the mean values of features for the clusters. Can any immediate observations be made?
-  5. Construct feature distributions for the clusters. Can any observations be made from them?
-  6. Calculate the churn rate for each obtained cluster. Are they different in terms of churn rate? Which clusters are prone to churn, and which are reliable?
-
+   1. Standardize the data.
+   2. Build a distance matrix on the standardized feature matrix and draw a dendrogram.
+   3. Train the clustering model based on the K-Means algorithm and predict customer clusters. Let's agree to use n = 5 as the number of clusters.
+   4. Examine the mean values of features for the clusters. Can any immediate observations be made?
+   5. Construct feature distributions for the clusters. Can any observations be made from them?
+   6. Calculate the churn rate for each obtained cluster. Are they different in terms of churn rate? Which clusters are prone to churn, and which are reliable?
 5. Formulate conclusions and make basic recommendations for working with customers.
