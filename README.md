@@ -16,9 +16,9 @@ Specifically, the objectives are to:
 2. Create typical user profiles: identify several of the most prominent groups and characterize their key attributes.
 3. Analyze the main features that have the greatest impact on churn.
 4. Formulate key conclusions and develop recommendations to improve customer relationship management, including:
-  1. Identifying target customer groups;
-  2. Proposing measures to reduce churn;
-  3. Determining other nuances of customer interactions.
+   1. Identifying target customer groups;
+   2. Proposing measures to reduce churn;
+   3. Determining other nuances of customer interactions.
 
 **Data description**
 
