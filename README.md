@@ -1,4 +1,4 @@
-# First data science project - data science gym
+# First data science project - clusterisation of gym users
 
 ## Introduction
 
