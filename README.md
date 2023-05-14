@@ -28,31 +28,31 @@ We have a dataset gym_churn.csv containing information about the month prior to 
 
 The current fields in the dataset contain user data for the month prior to the churn check, such as:
 
-2. Gender - the gender of the customer.
-3. Near_Location - whether the customer lives or works in the area where the fitness center is located.
-4. Partner - indicating whether the customer is an employee of a club partner company, in which case the fitness center stores information about the customer's employer.
-5. Promo_friends - indicating whether the customer registered under the "bring a friend" promotion, using a promo code from an acquaintance when paying for the first subscription.
-6. Phone - indicating whether the customer provided a contact phone number.
-7. Age - the age of the customer.
-8. Lifetime - the time since the customer's first visit to the fitness center (in months).
+2. `Gender` - the gender of the customer.
+3. `Near_Location` - whether the customer lives or works in the area where the fitness center is located.
+4. `Partner` - indicating whether the customer is an employee of a club partner company, in which case the fitness center stores information about the customer's employer.
+5. `Promo_friends` - indicating whether the customer registered under the "bring a friend" promotion, using a promo code from an acquaintance when paying for the first subscription.
+6. `Phone` - indicating whether the customer provided a contact phone number.
+7. `Age` - the age of the customer.
+8. `Lifetime` - the time since the customer's first visit to the fitness center (in months).
 
 The dataset also includes information based on the client's visit log, purchases, and current subscription status, such as:
 
-9. Contract_period - the duration of the customer's current active subscription, which can be a month, 3 months, 6 months, or a year.
-10. Month_to_end_contract - the time until the end of the customer's current active subscription (in months).
-11. Group_visits - indicating whether the customer attends group classes.
-12. Avg_class_frequency_total - the average frequency of visits per week for the entire duration of the subscription.
-13. Avg_class_frequency_current_month - the average frequency of visits per week for the previous month.
-14. Avg_additional_charges_total - the total revenue from other fitness center services, such as cafes, sports goods, beauty, and massage salon.
+9. `Contract_period` - the duration of the customer's current active subscription, which can be a month, 3 months, 6 months, or a year.
+10. `Month_to_end_contract` - the time until the end of the customer's current active subscription (in months).
+11. `Group_visits` - indicating whether the customer attends group classes.
+12. `Avg_class_frequency_total` - the average frequency of visits per week for the entire duration of the subscription.
+13. `Avg_class_frequency_current_month` - the average frequency of visits per week for the previous month.
+14. `Avg_additional_charges_total` - the total revenue from other fitness center services, such as cafes, sports goods, beauty, and massage salon.
 
 **Project plan**
 
 1. Load the data.
 2. Conduct an exploratory data analysis (EDA):
-  1. Examine the dataset for missing features and study the mean values and standard deviations.
-  2. Analyze the mean values of features in two groups: those who churned and those who stayed.
-  3. Construct bar and feature distributions for those who churned and those who stayed.
-  4. Create a correlation matrix and display it.
+  a. Examine the dataset for missing features and study the mean values and standard deviations.
+  b. Analyze the mean values of features in two groups: those who churned and those who stayed.
+  c. Construct bar and feature distributions for those who churned and those who stayed.
+  d. Create a correlation matrix and display it.
 
 3. Build a binary classification model for customers, where the target feature is customer churn in the next month:
   1. Split the data into training and validation sets.
